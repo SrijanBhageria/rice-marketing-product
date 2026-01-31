@@ -163,13 +163,12 @@ function ProductSection({ product, index }: { product: typeof products[0]; index
     >
       {/* Background number */}
       <motion.span
-        style={{ opacity: useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 0.05, 0.05, 0]) }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40vw] font-heading pointer-events-none select-none"
         style={{ 
+          opacity: useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 0.05, 0.05, 0]),
           fontFamily: "var(--font-playfair)",
           color: product.badgeColor,
-          opacity: 0.05,
         }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[40vw] font-heading pointer-events-none select-none"
       >
         {product.number}
       </motion.span>
