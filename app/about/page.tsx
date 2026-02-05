@@ -212,11 +212,11 @@ export default function AboutPage() {
               className="text-3xl md:text-4xl font-heading text-[#3D3636] mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Thank You for Being Part of Our Story
+              The Beginning of Always
             </h2>
 
             <p className="text-xl text-[#5C5460] mb-10 leading-relaxed">
-              We can&apos;t wait to celebrate with you on our wedding day.
+            A celebration of love, commitment, and a lifetime together.
             </p>
 
             <Button variant="primary" size="lg" href="/event">

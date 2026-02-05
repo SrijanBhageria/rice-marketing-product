@@ -278,10 +278,10 @@ export default function EventPage() {
               className="text-3xl md:text-4xl font-heading text-white mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              A Gift for You Both
+            Said ‘I do.’ Launched too.
             </h2>
             <p className="text-white/90 text-lg max-w-2xl mx-auto">
-              With love from Molu — wishing you a lifetime of happiness. Save the date.
+            Wedding done. Website live.
             </p>
           </motion.div>
         </div>

@@ -84,7 +84,6 @@ export function Footer() {
             <p className="text-[#5C5460] text-sm leading-relaxed mb-4">
               May your union be filled with joy, prosperity, and endless love.
               <br />
-              — Save the date
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-[#D4C4E0]/30 text-[#5B4B8A] text-xs rounded-full">Save the date</span>

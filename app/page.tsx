@@ -436,7 +436,7 @@ export default function Home() {
             </p>
 
             <p className="text-white/80 text-sm uppercase tracking-[0.2em]">
-            With love always — Molu
+            With love always, Molu
             </p>
           </motion.div>
         </div>
