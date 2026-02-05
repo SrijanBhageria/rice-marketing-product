@@ -8,10 +8,8 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/products", label: "Products" },
-  { href: "/quality", label: "Quality" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about", label: "Our Story" },
+  { href: "/event", label: "Event" },
 ];
 
 export function Navbar() {
@@ -28,7 +26,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -48,25 +45,23 @@ export function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#FFFDF8]/95 backdrop-blur-md shadow-sm"
+            ? "bg-[#FAF8FC]/98 backdrop-blur-md shadow-md border-b border-[#D4C4E0]/20"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
             <Link href="/" className="flex items-center">
               <motion.span
-                className="text-2xl md:text-3xl font-heading bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] bg-clip-text text-transparent"
+                className="text-xl md:text-2xl font-heading bg-gradient-to-r from-[#5B4B8A] via-[#B57EDC] to-[#9FD9C3] bg-clip-text text-transparent"
                 style={{ fontFamily: "var(--font-playfair)" }}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                Tamaal
+                Shashwat & Ishana
               </motion.span>
             </Link>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <NavLink
@@ -78,10 +73,9 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 text-[#2E2E2E] hover:text-[#C17F4E] transition-colors"
+              className="md:hidden p-2 text-[#3D3636] hover:text-[#5B4B8A] transition-colors"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -90,11 +84,9 @@ export function Navbar() {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -104,33 +96,30 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             />
 
-            {/* Mobile Menu Panel */}
             <motion.div
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[280px] bg-[#FFFDF8] z-50 md:hidden shadow-xl"
+              className="fixed top-0 right-0 bottom-0 w-[280px] bg-[#FAF8FC] z-50 md:hidden shadow-xl"
             >
               <div className="flex flex-col h-full">
-                {/* Mobile Menu Header */}
-                <div className="flex items-center justify-between p-6 border-b border-[#E8B86D]/20">
+                <div className="flex items-center justify-between p-6 border-b border-[#D4C4E0]/30">
                   <span
-                    className="text-2xl font-heading bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] bg-clip-text text-transparent"
+                    className="text-xl font-heading bg-gradient-to-r from-[#5B4B8A] to-[#B57EDC] bg-clip-text text-transparent"
                     style={{ fontFamily: "var(--font-playfair)" }}
                   >
-                    Tamaal
+                    Wedding Gift
                   </span>
                   <button
                     onClick={() => setMobileMenuOpen(false)}
-                    className="p-2 text-[#2E2E2E] hover:text-[#C17F4E] transition-colors"
+                    className="p-2 text-[#3D3636] hover:text-[#5B4B8A] transition-colors"
                     aria-label="Close menu"
                   >
                     <X size={24} />
                   </button>
                 </div>
 
-                {/* Mobile Menu Links */}
                 <nav className="flex-1 p-6">
                   <motion.ul
                     className="space-y-4"
@@ -174,10 +163,10 @@ export function Navbar() {
                         <Link
                           href={link.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className={`block py-3 text-lg transition-colors border-b border-[#E8B86D]/10 ${
+                          className={`block py-3 text-lg transition-colors border-b border-[#D4C4E0]/20 ${
                             pathname === link.href
-                              ? "text-[#C17F4E] font-medium"
-                              : "text-[#2E2E2E] hover:text-[#C17F4E]"
+                              ? "text-[#5B4B8A] font-medium"
+                              : "text-[#3D3636] hover:text-[#5B4B8A]"
                           }`}
                         >
                           {link.label}
@@ -187,10 +176,9 @@ export function Navbar() {
                   </motion.ul>
                 </nav>
 
-                {/* Mobile Menu Footer */}
-                <div className="p-6 border-t border-[#E8B86D]/20">
-                  <p className="text-sm text-[#6B6B6B]">
-                    Pure Grains. Honest Taste.
+                <div className="p-6 border-t border-[#D4C4E0]/30">
+                  <p className="text-sm text-[#5C5460]">
+                    With love from Molu — for your new beginning.
                   </p>
                 </div>
               </div>
@@ -215,13 +203,13 @@ function NavLink({
     <Link href={href} className="relative group">
       <span
         className={`transition-colors text-sm font-medium tracking-wide ${
-          isActive ? "text-[#C17F4E]" : "text-[#2E2E2E] hover:text-[#C17F4E]"
+          isActive ? "text-[#5B4B8A]" : "text-[#3D3636] hover:text-[#5B4B8A]"
         }`}
       >
         {label}
       </span>
       <span
-        className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] transition-all duration-300 ${
+        className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#5B4B8A] to-[#B57EDC] transition-all duration-300 ${
           isActive ? "w-full" : "w-0 group-hover:w-full"
         }`}
       />

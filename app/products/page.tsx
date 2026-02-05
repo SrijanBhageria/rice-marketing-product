@@ -320,7 +320,7 @@ function ProductSection({ product, index }: { product: typeof products[0]; index
               viewport={{ once: true }}
               transition={{ delay: 0.9 }}
             >
-              <Button variant="primary" href="/contact">
+              <Button variant="primary" href="/event">
                 Inquire Now
                 <ArrowRight size={18} className="ml-2" />
               </Button>
@@ -445,7 +445,7 @@ export default function ProductsPage() {
             <Button 
               variant="secondary" 
               size="lg" 
-              href="/contact"
+              href="/event"
               className="bg-white text-[#C17F4E] hover:bg-[#2E2E2E] hover:text-white"
             >
               Contact Us Today

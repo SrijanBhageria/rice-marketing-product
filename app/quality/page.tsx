@@ -391,7 +391,7 @@ export default function QualityPage() {
               <Button
                 variant="outline"
                 size="lg"
-                href="/contact"
+                href="/event"
                 className="border-white text-white hover:bg-white hover:text-[#C17F4E]"
               >
                 Contact Us

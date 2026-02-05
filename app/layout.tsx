@@ -20,25 +20,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tamaal | Pure Grains. Honest Taste.",
+  title: "Shashwat & Ishana | A Wedding Gift from Molu",
   description:
-    "Tamaal brings you premium quality rice from Indian fields to your table. Experience heritage, purity, and everyday luxury with every grain.",
+    "A gift from Molu — celebrating Shashwat & Ishana's love and their Indian wedding. Save the date.",
   keywords: [
-    "Tamaal",
-    "rice",
-    "basmati",
-    "premium rice",
-    "Indian rice",
-    "quality rice",
-    "long grain rice",
+    "Indian wedding",
+    "wedding gift",
+    "celebration",
+    "wedding",
   ],
-  authors: [{ name: "Tamaal" }],
+  authors: [{ name: "Wedding Gift" }],
   openGraph: {
-    title: "Tamaal | Pure Grains. Honest Taste.",
-    description:
-      "Premium quality rice from Indian fields to your table. Experience heritage, purity, and everyday luxury.",
+    title: "Shashwat & Ishana | A Wedding Gift from Molu",
+    description: "A gift from Molu — celebrating Shashwat & Ishana's love and their Indian wedding.",
     type: "website",
-    locale: "en_IN",
   },
 };
 
@@ -50,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${playfair.variable} ${inter.variable} antialiased bg-[#FFFDF8] text-[#2E2E2E]`}
+        className={`${playfair.variable} ${inter.variable} antialiased bg-[#FAF8FC] text-[#3D3636]`}
         style={{ fontFamily: "var(--font-inter)" }}
       >
         <ThemeProvider>

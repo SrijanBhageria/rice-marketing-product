@@ -16,11 +16,11 @@ interface ButtonProps extends Omit<HTMLMotionProps<"button">, "ref"> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-[#C17F4E] text-white hover:bg-[#A66B3D] shadow-md hover:shadow-lg",
+    "bg-[#5B4B8A] text-white hover:bg-[#4A3D72] shadow-md hover:shadow-lg",
   secondary:
-    "bg-[#E8B86D] text-[#2E2E2E] hover:bg-[#D4A55C] shadow-md hover:shadow-lg",
+    "bg-[#B57EDC] text-white hover:bg-[#9F6AC9] shadow-md hover:shadow-lg",
   outline:
-    "bg-transparent border-2 border-[#C17F4E] text-[#C17F4E] hover:bg-[#C17F4E] hover:text-white",
+    "bg-transparent border-2 border-[#5B4B8A] text-[#5B4B8A] hover:bg-[#5B4B8A] hover:text-white",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
@@ -35,7 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     const baseStyles =
-      "inline-flex items-center justify-center font-medium rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#C17F4E] focus:ring-offset-2";
+      "inline-flex items-center justify-center font-medium rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#5B4B8A] focus:ring-offset-2";
 
     const combinedStyles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 

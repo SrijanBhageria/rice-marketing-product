@@ -1,13 +1,13 @@
 export const theme = {
   colors: {
-    primary: "#C17F4E",      // Warm terracotta/copper
-    secondary: "#E8B86D",    // Bright golden yellow
-    background: "#FFFDF8",   // Warm off-white
-    accent: "#5BB98B",       // Vibrant green
-    accentBlue: "#5B9BD5",   // Bright sky blue
-    accentCoral: "#E07B67",  // Warm coral/salmon
-    textPrimary: "#2E2E2E",
-    textMuted: "#6B6B6B",
+    primary: "#5B4B8A",       // Deep purple
+    secondary: "#B57EDC",      // Orchid
+    background: "#FAF8FC",     // Light lavender-white
+    mint: "#9FD9C3",           // Mint green
+    gold: "#D4AF37",           // Gold
+    lavender: "#D4C4E0",       // Light lavender
+    textPrimary: "#3D3636",
+    textMuted: "#5C5460",
   },
   fonts: {
     heading: "var(--font-playfair)",
