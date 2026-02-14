@@ -62,7 +62,7 @@ export function Navbar() {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                Tamaal
+                Hariom
               </motion.span>
             </Link>
 
@@ -119,7 +119,7 @@ export function Navbar() {
                     className="text-2xl font-heading bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] bg-clip-text text-transparent"
                     style={{ fontFamily: "var(--font-playfair)" }}
                   >
-                    Tamaal
+                    Hariom
                   </span>
                   <button
                     onClick={() => setMobileMenuOpen(false)}

@@ -36,7 +36,7 @@ export function Footer() {
                 className="text-3xl font-heading bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] bg-clip-text text-transparent"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Tamaal
+                Hariom
               </span>
             </Link>
             <p className="text-[#6B6B6B] text-sm leading-relaxed mb-6">
@@ -105,10 +105,10 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-[#E07B67] flex-shrink-0" />
                 <a
-                  href="mailto:hello@tamaal.in"
+                  href="mailto:hello@hariom.in"
                   className="text-[#6B6B6B] hover:text-[#C17F4E] transition-colors text-sm"
                 >
-                  hello@tamaal.in
+                  hello@hariom.in
                 </a>
               </li>
             </ul>
@@ -120,7 +120,7 @@ export function Footer() {
               Our Promise
             </h4>
             <p className="text-[#6B6B6B] text-sm leading-relaxed mb-4">
-              Every grain of Tamaal rice is sourced from trusted farmers, naturally aged, and hygienically packed to bring you the best quality.
+              Every grain of Hariom rice is sourced from trusted farmers, naturally aged, and hygienically packed to bring you the best quality.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-[#C17F4E]/10 text-[#C17F4E] text-xs rounded-full">
@@ -140,7 +140,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-[#E8B86D]/20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-[#6B6B6B] text-sm">
-              © 2026 Tamaal. All rights reserved.
+              © 2026 Hariom. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link

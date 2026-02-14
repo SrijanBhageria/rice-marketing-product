@@ -36,10 +36,10 @@ const storyChapters = [
   },
   {
     chapter: "Chapter 4",
-    title: "The Tamaal Way",
+    title: "The Hariom Way",
     year: "2021",
     content:
-      "We built our own aging facility — where time works its magic on every grain. 12 months of patience. Zero shortcuts. This became the Tamaal way.",
+      "We built our own aging facility — where time works its magic on every grain. 12 months of patience. Zero shortcuts. This became the Hariom way.",
     image: "Aging Facility",
     align: "left",
   },
@@ -48,7 +48,7 @@ const storyChapters = [
     title: "Today & Tomorrow",
     year: "2026",
     content:
-      "Today, Tamaal graces millions of meals across India. But our journey has just begun. Every grain still carries that original dream — pure, honest, and made with love.",
+      "Today, Hariom graces millions of meals across India. But our journey has just begun. Every grain still carries that original dream — pure, honest, and made with love.",
     image: "Modern Facility",
     align: "right",
   },
@@ -73,7 +73,7 @@ const values = [
   {
     icon: Award,
     title: "Uncompromising Quality",
-    description: "We never settle. If it's not perfect, it's not Tamaal.",
+    description: "We never settle. If it's not perfect, it's not Hariom.",
   },
 ];
 
@@ -137,7 +137,7 @@ export default function AboutPage() {
               className="text-5xl md:text-7xl lg:text-8xl font-heading text-[#2E2E2E] mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Tamaal
+              Hariom
             </motion.h1>
 
             <motion.div
@@ -374,7 +374,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-[#5BB98B] text-sm font-medium uppercase tracking-[0.2em]">
-                The Heart of Tamaal
+                The Heart of Hariom
               </span>
               <h2
                 className="text-4xl md:text-5xl font-heading text-[#2E2E2E] mt-4 mb-6"
@@ -391,7 +391,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                 >
-                  Behind every grain of Tamaal rice are the hands that nurture it — 
+                  Behind every grain of Hariom rice are the hands that nurture it — 
                   over <strong className="text-[#2E2E2E]">500 farming families</strong> across 
                   Punjab, Haryana, and Uttarakhand.
                 </motion.p>
@@ -410,7 +410,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
-                  When you choose Tamaal, you&apos;re not just choosing quality — 
+                  When you choose Hariom, you&apos;re not just choosing quality — 
                   you&apos;re supporting a community that takes pride in every grain they grow.
                 </motion.p>
               </div>
@@ -546,7 +546,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-xl text-[#6B6B6B] mb-10 leading-relaxed">
-              Every meal you make with Tamaal rice adds a new page to our story. 
+              Every meal you make with Hariom rice adds a new page to our story. 
               Thank you for being part of this journey.
             </p>
 

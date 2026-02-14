@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Tamaal Brand Colors - Bright & Colorful */
+  /* Hariom Brand Colors - Bright & Colorful */
   --color-primary: #C17F4E;
   --color-secondary: #E8B86D;
   --color-background: #FFFDF8;
@@ -22,7 +22,7 @@
   --font-sans: var(--font-inter);
   --font-heading: var(--font-playfair);
   
-  /* Custom Tamaal colors for Tailwind */
+  /* Custom Hariom colors for Tailwind */
   --color-primary: #C17F4E;
   --color-secondary: #E8B86D;
   --color-accent: #5BB98B;

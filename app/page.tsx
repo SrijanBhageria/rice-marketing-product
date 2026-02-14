@@ -144,7 +144,7 @@ export default function Home() {
               className="text-lg md:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-10 leading-relaxed"
             >
               From Indian fields to your table. Experience the heritage, purity,
-              and everyday luxury that Tamaal brings to every meal.
+              and everyday luxury that Hariom brings to every meal.
             </motion.p>
 
             <motion.div
@@ -157,7 +157,7 @@ export default function Home() {
                 Explore Our Rice
               </Button>
               <Button variant="outline" size="lg" href="/about">
-                Why Tamaal?
+                Why Hariom?
               </Button>
             </motion.div>
           </motion.div>
@@ -255,7 +255,7 @@ export default function Home() {
 
               <p className="text-[#6B6B6B] text-lg leading-relaxed mb-6">
                 For generations, Indian kitchens have been built on the foundation of quality rice. 
-                Tamaal continues this legacy by sourcing the finest grains from trusted farmers 
+                Hariom continues this legacy by sourcing the finest grains from trusted farmers 
                 across India&apos;s most fertile regions.
               </p>
               <p className="text-[#6B6B6B] text-lg leading-relaxed mb-8">

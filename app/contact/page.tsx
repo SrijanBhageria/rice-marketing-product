@@ -42,8 +42,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    lines: ["hello@tamaal.in", "sales@tamaal.in"],
-    href: ["mailto:hello@tamaal.in", "mailto:sales@tamaal.in"],
+    lines: ["hello@hariom.in", "sales@hariom.in"],
+    href: ["mailto:hello@hariom.in", "mailto:sales@hariom.in"],
     color: "#E8B86D",
   },
   {
@@ -551,10 +551,10 @@ export default function ContactPage() {
               className="text-2xl md:text-3xl lg:text-4xl font-heading text-[#2E2E2E] mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Why Partner with Tamaal?
+              Why Partner with Hariom?
             </h2>
             <p className="text-[#6B6B6B] text-lg max-w-2xl mx-auto">
-              Join hundreds of retailers and distributors who trust Tamaal for quality and reliability.
+              Join hundreds of retailers and distributors who trust Hariom for quality and reliability.
             </p>
           </motion.div>
 
@@ -623,7 +623,7 @@ export default function ContactPage() {
               Ready to Partner?
             </h2>
             <p className="text-white/80 text-lg mb-10">
-              Let&apos;s discuss how Tamaal can add value to your business.
+              Let&apos;s discuss how Hariom can add value to your business.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button
@@ -638,7 +638,7 @@ export default function ContactPage() {
               <Button
                 variant="outline"
                 size="lg"
-                href="mailto:sales@tamaal.in"
+                href="mailto:sales@hariom.in"
                 className="border-white text-white hover:bg-white hover:text-[#C17F4E]"
               >
                 <Mail size={18} className="mr-2" />

@@ -135,14 +135,14 @@ export default function QualityPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-[#6B6B6B] text-lg md:text-xl leading-relaxed"
             >
-              Every grain of Tamaal rice goes through a meticulous journey — from carefully selected farms to your kitchen. No shortcuts, no compromises.
+              Every grain of Hariom rice goes through a meticulous journey — from carefully selected farms to your kitchen. No shortcuts, no compromises.
             </motion.p>
           </div>
         </div>
       </section>
 
 
-      {/* Why Choose Tamaal */}
+      {/* Why Choose Hariom */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -159,7 +159,7 @@ export default function QualityPage() {
                 className="text-3xl md:text-4xl font-heading text-[#2E2E2E] mt-2"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Why Choose Tamaal
+                Why Choose Hariom
               </h2>
             </div>
             <p className="text-[#6B6B6B] max-w-md">
@@ -373,10 +373,10 @@ export default function QualityPage() {
               className="text-3xl md:text-4xl font-heading text-white mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Experience the Tamaal Difference
+              Experience the Hariom Difference
             </h2>
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-              Join thousands of families who trust Tamaal for quality rice that transforms everyday meals.
+              Join thousands of families who trust Hariom for quality rice that transforms everyday meals.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button

@@ -20,11 +20,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tamaal | Pure Grains. Honest Taste.",
+  title: "Hariom | Pure Grains. Honest Taste.",
   description:
-    "Tamaal brings you premium quality rice from Indian fields to your table. Experience heritage, purity, and everyday luxury with every grain.",
+    "Hariom brings you premium quality rice from Indian fields to your table. Experience heritage, purity, and everyday luxury with every grain.",
   keywords: [
-    "Tamaal",
+    "Hariom",
     "rice",
     "basmati",
     "premium rice",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "quality rice",
     "long grain rice",
   ],
-  authors: [{ name: "Tamaal" }],
+  authors: [{ name: "Hariom" }],
   openGraph: {
-    title: "Tamaal | Pure Grains. Honest Taste.",
+    title: "Hariom | Pure Grains. Honest Taste.",
     description:
       "Premium quality rice from Indian fields to your table. Experience heritage, purity, and everyday luxury.",
     type: "website",
