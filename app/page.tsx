@@ -353,22 +353,22 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
-                name: "Basmati Rice", 
-                desc: "Long, aromatic grains for special occasions",
+                name: "Hariom Ridhi Sidhi", 
+                desc: "Best-selling premium long-grain with rich aroma & fluffy texture",
                 tag: "Best Seller",
                 color: "#E8B86D",
                 bgGradient: "from-[#E8B86D]/20 to-[#C17F4E]/10"
               },
               { 
-                name: "Everyday Rice", 
-                desc: "Perfect for daily meals and comfort food",
-                tag: "Family Favorite",
+                name: "Hariom Royal", 
+                desc: "Perfect balance of aroma, grain length & taste for daily meals",
+                tag: "Popular",
                 color: "#5BB98B",
                 bgGradient: "from-[#5BB98B]/20 to-[#5B9BD5]/10"
               },
               { 
-                name: "Premium Long Grain", 
-                desc: "Extra-long grains with rich aroma",
+                name: "Hariom Gold Extra Long", 
+                desc: "Superior grain length & rich aroma for biryani & special occasions",
                 tag: "Chef's Choice",
                 color: "#E07B67",
                 bgGradient: "from-[#E07B67]/20 to-[#E8B86D]/10"
