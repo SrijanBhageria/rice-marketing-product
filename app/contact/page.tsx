@@ -28,22 +28,27 @@ const contactReasons = [
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Our Office",
-    lines: ["123 Rice Mill Road,", "Karol Bagh, New Delhi", "India - 110001"],
+    title: "Mill Address",
+    lines: [
+      "Adhra Amrit Agro Products LLP",
+      "Plot No. 9, Sector-23, Phase-III",
+      "HSIIDC Mega Food Park Industrial Estate",
+      "Barhi, Haryana – 131101, India",
+    ],
     color: "#C17F4E",
   },
   {
     icon: Phone,
     title: "Phone",
-    lines: ["+91 123 456 7890", "+91 123 456 7891"],
-    href: ["tel:+911234567890", "tel:+911234567891"],
+    lines: ["+91 9310004242", "+91 9891454553", "+91 8800031850"],
+    href: ["tel:+919310004242", "tel:+919891454553", "tel:+918800031850"],
     color: "#5BB98B",
   },
   {
     icon: Mail,
     title: "Email",
-    lines: ["hello@hariom.in", "sales@hariom.in"],
-    href: ["mailto:hello@hariom.in", "mailto:sales@hariom.in"],
+    lines: ["info@adhraamrit.com"],
+    href: ["mailto:info@adhraamrit.com"],
     color: "#E8B86D",
   },
   {

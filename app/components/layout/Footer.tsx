@@ -89,26 +89,42 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-[#5BB98B] mt-0.5 flex-shrink-0" />
                 <span className="text-[#6B6B6B] text-sm">
-                  123 Rice Mill Road,<br />
-                  New Delhi, India 110001
+                  Adhra Amrit Agro Products LLP<br />
+                  Plot No. 9, Sector-23, Phase-III<br />
+                  HSIIDC Mega Food Park Industrial Estate<br />
+                  Barhi, Haryana – 131101, India
                 </span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-[#5B9BD5] flex-shrink-0" />
-                <a
-                  href="tel:+911234567890"
-                  className="text-[#6B6B6B] hover:text-[#C17F4E] transition-colors text-sm"
-                >
-                  +91 123 456 7890
-                </a>
+              <li className="flex flex-col gap-1">
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-[#5B9BD5] flex-shrink-0" />
+                  <span className="text-[#6B6B6B] text-sm">Phone:</span>
+                </div>
+                <ul className="space-y-1 pl-7">
+                  <li>
+                    <a href="tel:+919310004242" className="text-[#6B6B6B] hover:text-[#C17F4E] transition-colors text-sm">
+                      +91 9310004242
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+919891454553" className="text-[#6B6B6B] hover:text-[#C17F4E] transition-colors text-sm">
+                      +91 9891454553
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+918800031850" className="text-[#6B6B6B] hover:text-[#C17F4E] transition-colors text-sm">
+                      +91 8800031850
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-[#E07B67] flex-shrink-0" />
                 <a
-                  href="mailto:hello@hariom.in"
+                  href="mailto:info@adhraamrit.com"
                   className="text-[#6B6B6B] hover:text-[#C17F4E] transition-colors text-sm"
                 >
-                  hello@hariom.in
+                  info@adhraamrit.com
                 </a>
               </li>
             </ul>

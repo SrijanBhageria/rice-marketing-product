@@ -10,18 +10,18 @@ const storyChapters = [
   {
     chapter: "Chapter 1",
     title: "The Beginning",
-    year: "2014",
+    year: "",
     content:
-      "In the golden fields of Punjab, where the morning mist kisses the paddy, a dream was born. A dream to bring the purest, most aromatic rice to every Indian kitchen.",
+      "In the fertile fields of Punjab, surrounded by golden crops and the rhythm of rural life, a dream quietly took shape — to deliver rice that carries purity, aroma, and trust in every grain. This dream became the seed from which Hariom was born, rooted in the belief that quality food should be accessible, not exclusive.",
     image: "Punjab Rice Fields",
     align: "right",
   },
   {
     chapter: "Chapter 2",
     title: "The First Harvest",
-    year: "2015",
+    year: "",
     content:
-      "Our first harvest was small — just 50 tonnes from three farming families. But every grain carried the promise of quality that would become our signature.",
+      "The journey started modestly, with just 50 tonnes harvested from three passionate farming families. It wasn't about quantity; it was about integrity. Each grain symbolized a promise — of honesty, consistency, and authentic taste that families could rely on every day.",
     image: "First Harvest",
     align: "left",
   },
@@ -30,25 +30,25 @@ const storyChapters = [
     title: "Growing Together",
     year: "2018",
     content:
-      "Word spread from kitchen to kitchen. Mothers told mothers. Chefs told chefs. By 2018, we had partnered with over 200 farming families across three states.",
+      "Slowly, quietly, trust began to travel — from one kitchen to another, from one satisfied cook to the next. Mothers recommended it. Chefs approved it. Retailers trusted it. By 2018, our family had grown to over 200 farming partners across multiple states, united by a shared commitment to quality and community growth.",
     image: "Farming Community",
     align: "right",
   },
   {
     chapter: "Chapter 4",
     title: "The Hariom Way",
-    year: "2021",
+    year: "",
     content:
-      "We built our own aging facility — where time works its magic on every grain. 12 months of patience. Zero shortcuts. This became the Hariom way.",
+      "Understanding that exceptional rice requires patience, we established our own dedicated aging facility. Here, time becomes an ingredient. For up to 12 months, each grain matures naturally, developing enhanced aroma, better texture, and superior cooking results — without shortcuts or compromise. This careful process came to be known as \"The Hariom Way\" — where tradition meets discipline and quality meets time.",
     image: "Aging Facility",
     align: "left",
   },
   {
     chapter: "Chapter 5",
     title: "Today & Tomorrow",
-    year: "2026",
+    year: "",
     content:
-      "Today, Hariom graces millions of meals across India. But our journey has just begun. Every grain still carries that original dream — pure, honest, and made with love.",
+      "Today, Hariom rice finds its place in homes, restaurants, celebrations, and everyday meals across India. Yet, the essence remains unchanged — the same dedication, the same care, and the same original dream of delivering pure, honest rice made with love and responsibility. As we move forward, every grain we produce continues to carry that founding vision — nourishing families, supporting farmers, and upholding trust that lasts beyond generations.",
     image: "Modern Facility",
     align: "right",
   },
@@ -58,38 +58,66 @@ const values = [
   {
     icon: Sprout,
     title: "Rooted in Tradition",
-    description: "We honor centuries-old farming wisdom while embracing modern quality standards.",
+    description: "We honor the legacy of Indian farming while embracing modern processing standards to ensure reliability and purity.",
   },
   {
     icon: Heart,
-    title: "Made with Love",
-    description: "Every grain is treated with the care it deserves, from field to your table.",
+    title: "Crafted with Care",
+    description: "From selecting the finest paddy to the final sealed pack, every stage is handled with meticulous attention and responsibility.",
   },
   {
     icon: Users,
     title: "Community First",
-    description: "Our success is shared with the farming families who make it all possible.",
+    description: "Our progress is deeply connected to the farming families and partners who grow alongside us, season after season.",
   },
   {
     icon: Award,
     title: "Uncompromising Quality",
-    description: "We never settle. If it's not perfect, it's not Hariom.",
+    description: "We follow one simple principle — if it does not meet our highest standards, it does not carry the name Hariom.",
   },
 ];
 
 export default function AboutPage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const chaptersRef = useRef<HTMLDivElement>(null);
-  
-  const { scrollYProgress } = useScroll({
-    target: chaptersRef,
-    offset: ["start center", "end center"],
-  });
+
+  // Viewport-based scroll (avoids null ref issues when target not yet mounted)
+  const { scrollYProgress } = useScroll();
 
   const progressHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <div ref={containerRef}>
+      {/* About Us Intro */}
+      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-[#FFFDF8] relative">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-[#C17F4E] text-sm font-medium uppercase tracking-[0.2em]"
+          >
+            About Us
+          </motion.span>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-6 space-y-6 text-lg md:text-xl text-[#6B6B6B] leading-relaxed"
+          >
+            <p>
+              At the heart of every perfect meal lies a grain chosen with care.
+            </p>
+            <p>
+              Adhra Amrit Agro Products LLP was founded with a simple purpose — to bring pure, high-quality rice from trusted farms to dining tables across India. From sourcing paddy to final packaging, every step is guided by precision, hygiene, and an uncompromising commitment to quality.
+            </p>
+            <p>
+              Operating from our modern processing facility at HSIIDC Mega Food Park, Barhi (Haryana), we combine traditional farming wisdom with advanced milling and aging techniques to ensure consistency, aroma, and taste in every grain we deliver.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Hero Section - Book Cover */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[#FFFDF8] via-[#FAF7F2] to-[#FFFDF8]">
         {/* Decorative elements */}
@@ -192,7 +220,7 @@ export default function AboutPage() {
             className="text-center mb-24"
           >
             <p className="text-lg md:text-xl text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed">
-              Every great story has humble beginnings. Ours started with a simple question:
+              Every brand has an origin. Ours began not in a boardroom, but in the quiet fields where the first rays of sunlight meet ripened paddy. It began with a heartfelt question:
             </p>
             <motion.p
               initial={{ opacity: 0, scale: 0.9 }}
@@ -202,7 +230,7 @@ export default function AboutPage() {
               className="text-2xl md:text-3xl text-[#C17F4E] mt-6 italic"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              &ldquo;Why can&apos;t every family enjoy premium rice?&rdquo;
+              &ldquo;Why shouldn&apos;t every family enjoy premium rice, every single day?&rdquo;
             </motion.p>
           </motion.div>
 
@@ -246,12 +274,6 @@ export default function AboutPage() {
             <span className="text-[#C17F4E] text-sm font-medium uppercase tracking-[0.2em]">
               What We Believe
             </span>
-            <h2
-              className="text-4xl md:text-5xl font-heading text-[#2E2E2E] mt-4"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              Our Values
-            </h2>
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
@@ -261,7 +283,7 @@ export default function AboutPage() {
             />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
@@ -391,9 +413,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                 >
-                  Behind every grain of Hariom rice are the hands that nurture it — 
-                  over <strong className="text-[#2E2E2E]">500 farming families</strong> across 
-                  Punjab, Haryana, and Uttarakhand.
+                  At the core of every grain of Hariom rice are the dedicated hands that grow it — a close-knit network of over <strong className="text-[#2E2E2E]">500 farming families</strong> across Punjab, Haryana, and Uttarakhand.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -401,8 +421,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
                 >
-                  We don&apos;t just buy rice. We build relationships. We share knowledge. 
-                  We celebrate harvests together and support each other through challenges.
+                  For us, sourcing is not just a transaction; it is a relationship built on trust and shared purpose. We work closely with our farmers, exchange knowledge, celebrate every harvest together, and stand by each other through every season&apos;s challenges.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -410,8 +429,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
-                  When you choose Hariom, you&apos;re not just choosing quality — 
-                  you&apos;re supporting a community that takes pride in every grain they grow.
+                  When you choose Hariom, you choose more than just premium quality rice. You become part of a community that nurtures each grain with pride, care, and responsibility — from field to plate.
                 </motion.p>
               </div>
             </motion.div>
@@ -540,14 +558,11 @@ export default function AboutPage() {
               className="text-3xl md:text-4xl lg:text-5xl font-heading text-[#2E2E2E] mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              The Story Continues
-              <br />
-              <span className="text-[#C17F4E]">With You</span>
+              The Story Continues — With You
             </h2>
 
             <p className="text-xl text-[#6B6B6B] mb-10 leading-relaxed">
-              Every meal you make with Hariom rice adds a new page to our story. 
-              Thank you for being part of this journey.
+              Every meal prepared with Hariom rice writes a new chapter in our journey. Your trust fuels our passion, and your table completes our purpose. Together with our farmers and guided by the values of Adhra Amrit Agro Products LLP, we continue to grow — one harvest, one family, and one grain at a time.
             </p>
 
             <motion.div
@@ -604,16 +619,18 @@ function StoryChapter({
         >
           <span className="text-[#C17F4E]/40">{chapter.image}</span>
 
-          {/* Year badge */}
-          <motion.div
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, type: "spring" }}
-            className="absolute top-4 right-4 bg-[#C17F4E] text-white px-4 py-2 rounded-full text-sm font-medium"
-          >
-            {chapter.year}
-          </motion.div>
+          {/* Year badge - only when year is set */}
+          {chapter.year ? (
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, type: "spring" }}
+              className="absolute top-4 right-4 bg-[#C17F4E] text-white px-4 py-2 rounded-full text-sm font-medium"
+            >
+              {chapter.year}
+            </motion.div>
+          ) : null}
         </motion.div>
       </motion.div>
 
