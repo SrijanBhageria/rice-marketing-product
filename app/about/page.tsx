@@ -79,10 +79,15 @@ const values = [
 
 export default function AboutPage() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const timelineSectionRef = useRef<HTMLElement>(null);
   const chaptersRef = useRef<HTMLDivElement>(null);
 
-  // Viewport-based scroll (avoids null ref issues when target not yet mounted)
-  const { scrollYProgress } = useScroll();
+  // Tie progress to the whole Story Timeline (Opening + chapters) so the line fills 0→100%
+  // as you scroll through the section; progress starts when this section hits the viewport top.
+  const { scrollYProgress } = useScroll({
+    target: timelineSectionRef,
+    offset: ["start start", "end end"],
+  });
 
   const progressHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
@@ -209,7 +214,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Timeline */}
-      <section className="py-20 bg-white relative">
+      <section ref={timelineSectionRef} className="py-20 bg-white relative">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           {/* Opening */}
           <motion.div
