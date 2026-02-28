@@ -1,21 +1,22 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/app/components/ui/Button";
-import { 
-  Check, 
-  Star, 
-  Sparkles, 
-  ChefHat, 
-  Heart, 
+import {
+  Check,
+  Star,
+  Sparkles,
+  ChefHat,
+  Heart,
   Award,
   ArrowRight,
   Wheat,
   Crown,
   Leaf,
   Timer,
-  Shield
+  Shield,
 } from "lucide-react";
 
 const products = [
@@ -38,6 +39,7 @@ const products = [
     reviews: 2847,
     icon: Crown,
     number: "01",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.06.png", // Ridhi Sidhi
   },
   {
     id: "gold-extra-long",
@@ -58,6 +60,7 @@ const products = [
     reviews: 1893,
     icon: ChefHat,
     number: "02",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.07 (1).png", // Gold Extra Long
   },
   {
     id: "royal-basmati",
@@ -78,6 +81,7 @@ const products = [
     reviews: 4521,
     icon: Star,
     number: "03",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.06 (2).png", // Royal
   },
   {
     id: "special-choice",
@@ -98,6 +102,7 @@ const products = [
     reviews: 5234,
     icon: Heart,
     number: "04",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.05.png", // Special Choice
   },
   {
     id: "tibar-supreme",
@@ -118,6 +123,7 @@ const products = [
     reviews: 3421,
     icon: Leaf,
     number: "05",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.05 (2).png", // Tibar Supreme
   },
   {
     id: "super-dubar",
@@ -138,6 +144,7 @@ const products = [
     reviews: 2156,
     icon: Timer,
     number: "06",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.05 (1).png", // Super Dubar
   },
   {
     id: "mogra-supreme",
@@ -158,6 +165,7 @@ const products = [
     reviews: 2890,
     icon: Sparkles,
     number: "07",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.06 (1).png", // Mogra Supreme
   },
   {
     id: "mini-mogra",
@@ -178,6 +186,7 @@ const products = [
     reviews: 1567,
     icon: Wheat,
     number: "08",
+    image: "/WhatsApp Image 2026-02-28 at 17.19.07.png", // Mini Mogra
   },
 ];
 
@@ -234,13 +243,22 @@ function ProductSection({ product, index }: { product: typeof products[0]; index
             className={isEven ? "" : "lg:col-start-2"}
           >
             <div className={`aspect-square bg-gradient-to-br ${product.bgGradient} rounded-3xl flex items-center justify-center relative overflow-hidden`}>
+              {/* Product package image */}
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-contain p-0 scale-125"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+
               {/* Badge */}
               <motion.span
                 initial={{ x: 50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="absolute top-6 right-6 px-4 py-2 text-sm font-medium rounded-full text-white shadow-lg"
+                className="absolute top-6 right-6 px-4 py-2 text-sm font-medium rounded-full text-white shadow-lg z-10"
                 style={{ backgroundColor: product.badgeColor }}
               >
                 {product.badge}
@@ -252,22 +270,11 @@ function ProductSection({ product, index }: { product: typeof products[0]; index
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="absolute top-6 left-6 text-6xl font-heading opacity-20"
+                className="absolute top-6 left-6 text-6xl font-heading opacity-20 z-10"
                 style={{ fontFamily: "var(--font-playfair)", color: product.badgeColor }}
               >
                 {product.number}
               </motion.span>
-
-              {/* Large Icon */}
-              <motion.div
-                initial={{ scale: 0, rotate: -20 }}
-                whileInView={{ scale: 1, rotate: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
-                className="w-40 h-40 rounded-full bg-white/80 flex items-center justify-center shadow-2xl"
-              >
-                <product.icon size={72} style={{ color: product.badgeColor }} />
-              </motion.div>
 
               {/* Rating Card */}
               <motion.div
@@ -275,7 +282,7 @@ function ProductSection({ product, index }: { product: typeof products[0]; index
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="absolute bottom-6 left-6 bg-white rounded-xl shadow-lg p-4"
+                className="absolute bottom-6 left-6 bg-white rounded-xl shadow-lg p-4 z-10"
               >
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-0.5">

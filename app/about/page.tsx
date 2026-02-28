@@ -12,26 +12,26 @@ const storyChapters = [
     title: "The Beginning",
     year: "",
     content:
-      "In the fertile fields of Punjab, surrounded by golden crops and the rhythm of rural life, a dream quietly took shape — to deliver rice that carries purity, aroma, and trust in every grain. This dream became the seed from which Hariom was born, rooted in the belief that quality food should be accessible, not exclusive.",
-    image: "Punjab Rice Fields",
+      "Hariom was born from a vision to create a rice brand that people could trust blindly — for daily meals, festive cooking, and large-scale kitchens alike. The goal was never just to sell rice, but to deliver consistency, purity, and honest value in every grain.",
+    image: "The Beginning",
     align: "right",
   },
   {
     chapter: "Chapter 2",
-    title: "The First Harvest",
+    title: "The First Step",
     year: "",
     content:
-      "The journey started modestly, with just 50 tonnes harvested from three passionate farming families. It wasn't about quantity; it was about integrity. Each grain symbolized a promise — of honesty, consistency, and authentic taste that families could rely on every day.",
-    image: "First Harvest",
+      "The early days were defined by disciplined selection, careful evaluation, and a refusal to compromise on grain standards. Quantity was never the focus — uniformity, aroma, and reliable cooking performance were. Each batch carried a single promise: If it carries the Hariom name, it must perform perfectly on the plate.",
+    image: "The First Step",
     align: "left",
   },
   {
     chapter: "Chapter 3",
-    title: "Growing Together",
-    year: "2018",
+    title: "Growing Through Trust",
+    year: "",
     content:
-      "Slowly, quietly, trust began to travel — from one kitchen to another, from one satisfied cook to the next. Mothers recommended it. Chefs approved it. Retailers trusted it. By 2018, our family had grown to over 200 farming partners across multiple states, united by a shared commitment to quality and community growth.",
-    image: "Farming Community",
+      "Over time, trust travelled quietly — from one retailer to another, from one kitchen to the next. Families appreciated the consistency. Chefs valued the uniform grains. Bulk buyers relied on its dependable cooking results. Hariom gradually became known not just as a rice brand, but as a reliable kitchen staple.",
+    image: "Growing Through Trust",
     align: "right",
   },
   {
@@ -39,7 +39,7 @@ const storyChapters = [
     title: "The Hariom Way",
     year: "",
     content:
-      "Understanding that exceptional rice requires patience, we established our own dedicated aging facility. Here, time becomes an ingredient. For up to 12 months, each grain matures naturally, developing enhanced aroma, better texture, and superior cooking results — without shortcuts or compromise. This careful process came to be known as \"The Hariom Way\" — where tradition meets discipline and quality meets time.",
+      "Great rice is not rushed — it is refined with patience and discipline. With structured aging and controlled processing practices, each grain is allowed to develop improved texture, better elongation, and enhanced aroma. This approach became our internal benchmark — a way of working where tradition meets quality control and time becomes an invisible ingredient.",
     image: "Aging Facility",
     align: "left",
   },
@@ -48,7 +48,7 @@ const storyChapters = [
     title: "Today & Tomorrow",
     year: "",
     content:
-      "Today, Hariom rice finds its place in homes, restaurants, celebrations, and everyday meals across India. Yet, the essence remains unchanged — the same dedication, the same care, and the same original dream of delivering pure, honest rice made with love and responsibility. As we move forward, every grain we produce continues to carry that founding vision — nourishing families, supporting farmers, and upholding trust that lasts beyond generations.",
+      "Today, Hariom rice serves homes, retailers, HoReCa kitchens, and distribution partners across domestic and international markets. Yet the philosophy remains unchanged — consistent quality, honest value, and dependable performance in every pack. As we grow, every grain continues to represent the same founding vision: to deliver rice that people can trust without a second thought.",
     image: "Modern Facility",
     align: "right",
   },
@@ -57,23 +57,23 @@ const storyChapters = [
 const values = [
   {
     icon: Sprout,
-    title: "Rooted in Tradition",
-    description: "We honor the legacy of Indian farming while embracing modern processing standards to ensure reliability and purity.",
+    title: "Rooted in Grain Heritage",
+    description: "We respect the long-standing legacy of Indian rice while applying modern quality practices to ensure purity, consistency, and dependable performance in every batch.",
   },
   {
     icon: Heart,
-    title: "Crafted with Care",
-    description: "From selecting the finest paddy to the final sealed pack, every stage is handled with meticulous attention and responsibility.",
+    title: "Crafted with Discipline",
+    description: "From careful grain selection to hygienic final packing, every stage is managed with precision, responsibility, and strict quality control.",
   },
   {
-    icon: Users,
-    title: "Community First",
-    description: "Our progress is deeply connected to the farming families and partners who grow alongside us, season after season.",
+    icon: Target,
+    title: "Consistency You Can Rely On",
+    description: "We focus on delivering uniform grains, stable cooking results, and predictable performance — whether for daily meals or large-scale kitchens.",
   },
   {
     icon: Award,
     title: "Uncompromising Quality",
-    description: "We follow one simple principle — if it does not meet our highest standards, it does not carry the name Hariom.",
+    description: "We follow one clear rule: if a batch does not meet our benchmarks for grain strength, aroma, and cooking excellence, it does not carry the name Hariom.",
   },
 ];
 
@@ -114,10 +114,10 @@ export default function AboutPage() {
               At the heart of every perfect meal lies a grain chosen with care.
             </p>
             <p>
-              Adhra Amrit Agro Products LLP was founded with a simple purpose — to bring pure, high-quality rice from trusted farms to dining tables across India. From sourcing paddy to final packaging, every step is guided by precision, hygiene, and an uncompromising commitment to quality.
+              Adhra Amrit Agro Products LLP was established with a simple yet powerful purpose — to deliver pure, high-quality rice that meets the expectations of households, retailers, HoReCa kitchens, and global buyers alike. From careful selection to hygienic packaging, every stage is governed by precision, discipline, and an uncompromising commitment to quality.
             </p>
             <p>
-              Operating from our modern processing facility at HSIIDC Mega Food Park, Barhi (Haryana), we combine traditional farming wisdom with advanced milling and aging techniques to ensure consistency, aroma, and taste in every grain we deliver.
+              Operating from our advanced processing facility at HSIIDC Mega Food Park, Barhi, we combine deep grain expertise with modern milling and controlled aging practices. This ensures consistency, dependable cooking performance, and the authentic aroma and taste that define every pack of Hariom rice.
             </p>
           </motion.div>
         </div>
@@ -225,7 +225,7 @@ export default function AboutPage() {
             className="text-center mb-24"
           >
             <p className="text-lg md:text-xl text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed">
-              Every brand has an origin. Ours began not in a boardroom, but in the quiet fields where the first rays of sunlight meet ripened paddy. It began with a heartfelt question:
+              Every brand has an origin. Ours did not begin in a boardroom presentation — it began with a simple thought:
             </p>
             <motion.p
               initial={{ opacity: 0, scale: 0.9 }}
@@ -235,7 +235,7 @@ export default function AboutPage() {
               className="text-2xl md:text-3xl text-[#C17F4E] mt-6 italic"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              &ldquo;Why shouldn&apos;t every family enjoy premium rice, every single day?&rdquo;
+              Why shouldn&apos;t premium quality rice be dependable and accessible every single day?
             </motion.p>
           </motion.div>
 
@@ -407,8 +407,8 @@ export default function AboutPage() {
                 className="text-4xl md:text-5xl font-heading text-[#2E2E2E] mt-4 mb-6"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Our Farming
-                <span className="text-[#5BB98B]"> Family</span>
+                Our Commitment to
+                <span className="text-[#5BB98B]"> Quality</span>
               </h2>
 
               <div className="space-y-6 text-[#6B6B6B] text-lg leading-relaxed">
@@ -418,7 +418,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                 >
-                  At the core of every grain of Hariom rice are the dedicated hands that grow it — a close-knit network of over <strong className="text-[#2E2E2E]">500 farming families</strong> across Punjab, Haryana, and Uttarakhand.
+                  At the core of every grain of Hariom rice is a disciplined system of selection, evaluation, and quality assurance — designed to deliver uniform grains, dependable cooking performance, and consistent taste in every batch.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -426,7 +426,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
                 >
-                  For us, sourcing is not just a transaction; it is a relationship built on trust and shared purpose. We work closely with our farmers, exchange knowledge, celebrate every harvest together, and stand by each other through every season&apos;s challenges.
+                  For us, sourcing is a carefully controlled process guided by long-term partnerships, defined quality benchmarks, and a shared responsibility to supply reliable rice across domestic and global markets.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -434,7 +434,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
-                  When you choose Hariom, you choose more than just premium quality rice. You become part of a community that nurtures each grain with pride, care, and responsibility — from field to plate.
+                  When you choose Hariom, you choose more than premium-quality rice. You choose a brand built on consistency, trust, and accountability — delivering grains that perform reliably, from everyday meals to large-scale kitchens.
                 </motion.p>
               </div>
             </motion.div>
@@ -474,61 +474,24 @@ export default function AboutPage() {
                   <span className="text-3xl font-heading text-[#C17F4E]" style={{ fontFamily: "var(--font-playfair)" }}>
                     500+
                   </span>
-                  <p className="text-sm text-[#6B6B6B]">Families</p>
+                  <p className="text-sm text-[#6B6B6B]">Quality-Controlled Batches Evaluated</p>
                 </div>
                 <div className="w-px bg-[#E8B86D]/20" />
                 <div className="text-center">
                   <span className="text-3xl font-heading text-[#C17F4E]" style={{ fontFamily: "var(--font-playfair)" }}>
                     3
                   </span>
-                  <p className="text-sm text-[#6B6B6B]">States</p>
+                  <p className="text-sm text-[#6B6B6B]">Key Grain-Sourcing Regions</p>
                 </div>
                 <div className="w-px bg-[#E8B86D]/20" />
                 <div className="text-center">
                   <span className="text-3xl font-heading text-[#C17F4E]" style={{ fontFamily: "var(--font-playfair)" }}>
                     10+
                   </span>
-                  <p className="text-sm text-[#6B6B6B]">Years</p>
+                  <p className="text-sm text-[#6B6B6B]">Years of Combined Grain Expertise</p>
                 </div>
               </motion.div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Journey Timeline Stats */}
-      <section className="py-20 bg-[#FAF7F2]">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {[
-              { icon: Users, number: "50L+", label: "Families Served" },
-              { icon: Truck, number: "28", label: "States Reached" },
-              { icon: Award, number: "15+", label: "Quality Awards" },
-              { icon: Heart, number: "100%", label: "Love in Every Grain" },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="w-14 h-14 mx-auto mb-4 bg-white rounded-xl shadow-sm flex items-center justify-center"
-                >
-                  <stat.icon size={24} className="text-[#C17F4E]" />
-                </motion.div>
-                <span
-                  className="text-4xl font-heading text-[#C17F4E] block"
-                  style={{ fontFamily: "var(--font-playfair)" }}
-                >
-                  {stat.number}
-                </span>
-                <p className="text-[#6B6B6B] text-sm mt-1">{stat.label}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
@@ -567,7 +530,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-xl text-[#6B6B6B] mb-10 leading-relaxed">
-              Every meal prepared with Hariom rice writes a new chapter in our journey. Your trust fuels our passion, and your table completes our purpose. Together with our farmers and guided by the values of Adhra Amrit Agro Products LLP, we continue to grow — one harvest, one family, and one grain at a time.
+              Every meal prepared with Hariom rice becomes a new chapter in our journey. Your trust drives our commitment, and your table completes our purpose. Guided by the values of Adhra Amrit Agro Products LLP, we continue to grow with the same focus — consistent quality, disciplined processes, and grains that deliver reliability in every serving.
             </p>
 
             <motion.div

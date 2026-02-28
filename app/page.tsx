@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { Button } from "@/app/components/ui/Button";
 import { ChevronDown, Sparkles, Leaf, Award, Shield, ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -143,8 +144,8 @@ export default function Home() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="text-lg md:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              From Indian fields to your table. Experience the heritage, purity,
-              and everyday luxury that Hariom brings to every meal.
+              Specializing in premium 1121 Steam Basmati rice, known for its long
+              grains, aroma, and reliable cooking performance.
             </motion.p>
 
             <motion.div
@@ -254,13 +255,15 @@ export default function Home() {
               />
 
               <p className="text-[#6B6B6B] text-lg leading-relaxed mb-6">
-                For generations, Indian kitchens have been built on the foundation of quality rice. 
-                Hariom continues this legacy by sourcing the finest grains from trusted farmers 
-                across India&apos;s most fertile regions.
+                For generations, Indian kitchens have relied on rice that delivers consistency, 
+                aroma, and dependable cooking results. Hariom carries this legacy forward through 
+                disciplined grain selection, structured aging, and precise processing practices 
+                designed to maintain uniform quality in every batch.
               </p>
               <p className="text-[#6B6B6B] text-lg leading-relaxed mb-8">
-                Every grain is naturally aged, carefully processed, and hygienically packed 
-                to preserve its authentic aroma and taste.
+                Each grain is carefully matured, hygienically handled, and packed with attention 
+                to detail — preserving its natural aroma, strength, and authentic taste for 
+                kitchens that value reliability every single day.
               </p>
 
               <motion.div
@@ -357,21 +360,24 @@ export default function Home() {
                 desc: "Best-selling premium long-grain with rich aroma & fluffy texture",
                 tag: "Best Seller",
                 color: "#E8B86D",
-                bgGradient: "from-[#E8B86D]/20 to-[#C17F4E]/10"
+                bgGradient: "from-[#E8B86D]/20 to-[#C17F4E]/10",
+                image: "/WhatsApp Image 2026-02-28 at 17.19.06.png"
               },
               { 
                 name: "Hariom Royal", 
                 desc: "Perfect balance of aroma, grain length & taste for daily meals",
                 tag: "Popular",
                 color: "#5BB98B",
-                bgGradient: "from-[#5BB98B]/20 to-[#5B9BD5]/10"
+                bgGradient: "from-[#5BB98B]/20 to-[#5B9BD5]/10",
+                image: "/WhatsApp Image 2026-02-28 at 17.19.06 (2).png"
               },
               { 
                 name: "Hariom Gold Extra Long", 
                 desc: "Superior grain length & rich aroma for biryani & special occasions",
                 tag: "Chef's Choice",
                 color: "#E07B67",
-                bgGradient: "from-[#E07B67]/20 to-[#E8B86D]/10"
+                bgGradient: "from-[#E07B67]/20 to-[#E8B86D]/10",
+                image: "/WhatsApp Image 2026-02-28 at 17.19.07 (1).png"
               },
             ].map((product, index) => (
               <motion.div
@@ -381,11 +387,12 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
               >
-                <motion.div
-                  whileHover={{ y: -12, scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                  className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group"
-                >
+                <Link href="/products" className="block">
+                  <motion.div
+                    whileHover={{ y: -12, scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                    className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all relative overflow-hidden group cursor-pointer"
+                  >
                   {/* Tag */}
                   <motion.span
                     initial={{ x: 100 }}
@@ -400,13 +407,18 @@ export default function Home() {
 
                   {/* Product image area */}
                   <div className={`aspect-square bg-gradient-to-br ${product.bgGradient} rounded-xl mb-6 flex items-center justify-center relative overflow-hidden`}>
-                    <span className="text-[#C17F4E]/30">Product Image</span>
-                    
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover scale-125"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
                     {/* Hover overlay */}
                     <motion.div
                       initial={{ opacity: 0 }}
                       whileHover={{ opacity: 1 }}
-                      className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10"
                       style={{ backgroundColor: `${product.color}E6` }}
                     >
                       <span className="text-white font-medium">View Details</span>
@@ -429,6 +441,7 @@ export default function Home() {
                     <ArrowRight size={20} style={{ color: product.color }} />
                   </motion.div>
                 </motion.div>
+                </Link>
               </motion.div>
             ))}
           </div>

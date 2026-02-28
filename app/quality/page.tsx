@@ -104,7 +104,7 @@ const certifications = [
 export default function QualityPage() {
   return (
     <>
-      {/* Hero Section - Clean & Simple */}
+      {/* Hero Section - Our Commitment to Quality */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-[#FFFDF8] via-[#F0FDF4] to-[#FFF8E7]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl">
@@ -114,7 +114,7 @@ export default function QualityPage() {
               transition={{ duration: 0.5 }}
               className="inline-block text-[#5BB98B] text-sm font-medium uppercase tracking-[0.2em] mb-4"
             >
-              Our Commitment
+              The Heart of Hariom
             </motion.span>
 
             <motion.h1
@@ -124,19 +124,56 @@ export default function QualityPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-heading text-[#2E2E2E] mb-6 leading-tight"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Quality is not an act,
+              Our Commitment to
               <br />
-              <span className="bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] bg-clip-text text-transparent">it&apos;s a habit.</span>
+              <span className="bg-gradient-to-r from-[#C17F4E] to-[#E8B86D] bg-clip-text text-transparent">Quality</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-[#6B6B6B] text-lg md:text-xl leading-relaxed"
+              className="text-[#6B6B6B] text-lg md:text-xl leading-relaxed mb-6"
             >
-              Every grain of Hariom rice goes through a meticulous journey — from carefully selected farms to your kitchen. No shortcuts, no compromises.
+              At the core of every grain of Hariom rice is a disciplined system of selection, evaluation, and quality assurance — designed to deliver uniform grains, dependable cooking performance, and consistent taste in every batch.
             </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+              className="text-[#6B6B6B] text-lg leading-relaxed mb-6"
+            >
+              For us, sourcing is a carefully controlled process guided by long-term partnerships, defined quality benchmarks, and a shared responsibility to supply reliable rice across domestic and global markets.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-[#6B6B6B] text-lg leading-relaxed"
+            >
+              When you choose Hariom, you choose more than premium-quality rice. You choose a brand built on consistency, trust, and accountability — delivering grains that perform reliably, from everyday meals to large-scale kitchens.
+            </motion.p>
+
+            {/* Quality Snapshot */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="mt-12 flex flex-wrap gap-8 md:gap-12"
+            >
+              <div>
+                <span className="text-3xl md:text-4xl font-heading text-[#C17F4E] block" style={{ fontFamily: "var(--font-playfair)" }}>500+</span>
+                <p className="text-sm text-[#6B6B6B]">Quality-Controlled Batches Evaluated</p>
+              </div>
+              <div>
+                <span className="text-3xl md:text-4xl font-heading text-[#C17F4E] block" style={{ fontFamily: "var(--font-playfair)" }}>3</span>
+                <p className="text-sm text-[#6B6B6B]">Key Grain-Sourcing Regions</p>
+              </div>
+              <div>
+                <span className="text-3xl md:text-4xl font-heading text-[#C17F4E] block" style={{ fontFamily: "var(--font-playfair)" }}>10+</span>
+                <p className="text-sm text-[#6B6B6B]">Years of Combined Grain Expertise</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -290,20 +327,20 @@ export default function QualityPage() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-[#C17F4E] text-sm font-medium uppercase tracking-[0.2em]">
-                Our Promise
+                Our Heritage
               </span>
               <h2
                 className="text-3xl md:text-4xl font-heading text-[#2E2E2E] mt-2 mb-6"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Quality You Can
+                A Legacy of Quality &
                 <span className="text-[#5BB98B]"> Trust</span>
               </h2>
               <p className="text-[#6B6B6B] text-lg leading-relaxed mb-6">
-                We believe that great rice starts with great relationships. Our direct partnerships with farming communities ensure fair practices, sustainable methods, and the highest quality paddy.
+                For generations, Indian kitchens have relied on rice that delivers consistency, aroma, and dependable cooking results. Hariom carries this legacy forward through disciplined grain selection, structured aging, and precise processing practices designed to maintain uniform quality in every batch.
               </p>
               <p className="text-[#6B6B6B] text-lg leading-relaxed mb-8">
-                Every batch is tested, every grain is inspected, and every pack is sealed with our promise of excellence.
+                Each grain is carefully matured, hygienically handled, and packed with attention to detail — preserving its natural aroma, strength, and authentic taste for kitchens that value reliability every single day.
               </p>
 
               <div className="flex flex-wrap gap-3">
