@@ -294,9 +294,15 @@ export default function Home() {
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                className="aspect-[4/3] bg-gradient-to-br from-[#E8B86D]/30 to-[#5BB98B]/20 rounded-2xl flex items-center justify-center overflow-hidden relative"
+                className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-[#E8B86D]/10"
               >
-                <span className="text-[#C17F4E]/40 text-lg">Rice Field Image</span>
+                <Image
+                  src="/wood.jpeg"
+                  alt="Wood"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
                 
                 {/* Floating badge */}
                 <motion.div
@@ -311,8 +317,8 @@ export default function Home() {
                       <Leaf size={20} className="text-[#5BB98B]" />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-[#2E2E2E]">Farm Fresh</p>
-                      <p className="text-xs text-[#6B6B6B]">Direct from farmers</p>
+                      <p className="text-sm font-semibold text-[#2E2E2E]">Premium Quality</p>
+                      <p className="text-xs text-[#6B6B6B]">Natural aroma & taste</p>
                     </div>
                   </div>
                 </motion.div>
