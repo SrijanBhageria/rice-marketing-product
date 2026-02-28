@@ -136,17 +136,17 @@ export function Footer() {
               Our Promise
             </h4>
             <p className="text-[#6B6B6B] text-sm leading-relaxed mb-4">
-              Every grain of Hariom rice is sourced from trusted farmers, naturally aged, and hygienically packed to bring you the best quality.
+              Every grain of Hariom rice undergoes disciplined selection, controlled aging, and hygienic packaging — ensuring purity, consistency, and trusted quality for every kitchen.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-[#C17F4E]/10 text-[#C17F4E] text-xs rounded-full">
                 100% Natural
               </span>
               <span className="px-3 py-1 bg-[#5BB98B]/10 text-[#5BB98B] text-xs rounded-full">
-                Farm Fresh
+                Consistent Quality
               </span>
               <span className="px-3 py-1 bg-[#5B9BD5]/10 text-[#5B9BD5] text-xs rounded-full">
-                Premium Quality
+                Premium Performance
               </span>
             </div>
           </div>

@@ -9,11 +9,11 @@ import {
   Wind,
   Users,
   Droplets,
-  Sun,
   Package,
   CheckCircle2,
   Sparkles,
   ArrowRight,
+  Settings,
 } from "lucide-react";
 
 const qualityFeatures = [
@@ -52,37 +52,37 @@ const qualityFeatures = [
 const processSteps = [
   {
     step: "01",
-    icon: Sun,
-    title: "Farm Sourcing",
-    description: "Partnering with 500+ trusted farmers across Punjab, Haryana, and Uttarakhand for the finest paddy.",
+    icon: Ruler,
+    title: "Curated Grain Selection",
+    description: "Carefully curated premium basmati grains chosen for superior length, purity, and consistency to meet strict quality benchmarks.",
     color: "#E8B86D",
   },
   {
     step: "02",
     icon: Droplets,
-    title: "Natural Aging",
-    description: "Stored in climate-controlled facilities for 12+ months to develop optimal flavor and texture.",
+    title: "Controlled Natural Aging",
+    description: "Grains are aged under monitored conditions to enhance aroma, elongation, and cooking performance.",
     color: "#5B9BD5",
   },
   {
     step: "03",
-    icon: Sparkles,
-    title: "Precision Processing",
-    description: "State-of-the-art milling and 5-stage cleaning to preserve nutrients and remove impurities.",
+    icon: Settings,
+    title: "Advanced Precision Milling",
+    description: "Processed through modern milling and multi-stage cleaning systems to ensure uniform texture and refined finish.",
     color: "#5BB98B",
   },
   {
     step: "04",
     icon: CheckCircle2,
-    title: "Quality Testing",
-    description: "50+ quality checks including grain length, moisture content, and aroma testing in ISO certified labs.",
+    title: "Multi-Level Quality Assurance",
+    description: "Each batch undergoes rigorous quality checks including grain length, moisture balance, and aroma validation.",
     color: "#E07B67",
   },
   {
     step: "05",
     icon: Package,
-    title: "Fresh Packaging",
-    description: "Nitrogen-flushed, food-grade packaging to lock in freshness and protect from contamination.",
+    title: "Hygienic Smart Packaging",
+    description: "Packed in food-grade, contamination-safe packaging designed to preserve freshness, purity, and shelf life.",
     color: "#C17F4E",
   },
 ];
@@ -251,13 +251,13 @@ export default function QualityPage() {
             className="text-center mb-16"
           >
             <span className="text-[#5BB98B] text-sm font-medium uppercase tracking-[0.2em]">
-              Farm to Table
+              Our Process
             </span>
             <h2
               className="text-3xl md:text-4xl font-heading text-[#2E2E2E] mt-2"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Our Process
+              Grain Excellence Journey
             </h2>
           </motion.div>
 
